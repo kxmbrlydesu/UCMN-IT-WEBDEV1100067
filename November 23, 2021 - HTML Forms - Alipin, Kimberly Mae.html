@@ -1,0 +1,195 @@
+</DOCTYPE html>
+<hmtl lang="en">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+
+	#example1 {
+		background-color: #EDC7B7;
+		background-repeat: no-repeat;
+		background-size: auto;
+			}
+/* Add a black background color to the top navigation */
+	body {
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+			}
+
+	<!--login-->
+		body	{
+			margin: 0;
+			padding: 0;
+			background-color:#6abadeba;
+			font-family: 'Arial';
+		}
+		.login{
+				width: 382px;
+				overflow: hidden;
+        box-shadow: 5px 5px 8px #a7a0a3;
+				padding: 42px;
+				background: #BAB2B5;
+				border-radius: 10px ;
+        }
+
+
+        #Uname{
+          width: 300px;
+          height: 30px;
+          border: none;
+          border-radius: 3px;
+          padding-left: 6px;
+          font-family: "times new roman";
+        }
+        #Pass{
+          width: 300px;
+          height: 30px;
+          border: none;
+          border-radius: 3px;
+          padding-left: 8px;
+          font-family: "times new roman";
+
+        }
+
+
+        #font{
+        color: #AC3B61;
+        font-family: "times new roman";
+        }
+        #font2{
+        font-family: "times new roman";
+        font-size: 15px;
+        }
+
+        h2{
+          font-family: "times new roman";
+          color: #123C69;
+        }
+        textarea{
+          width: 300px;
+          height: 60px;
+          font-family: "times new roman";
+        }
+        #btn:hover {
+
+        background-color: #c57690;
+        }
+        #btn {
+        top: 50%;
+        left: 50%;
+
+        background-color: #AC3B61;
+        color: black;
+        font-size: 16px;
+        padding: 10px 21px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        font-family: "times new roman";
+      }
+
+	</style>
+</head>
+
+
+<body id="example1">
+<center>
+<form>
+	<div>
+    <br>
+		<h2>November 23, 2021 - HTML Forms</h2>
+    <div class="login">
+    <center>
+    <form id="login" method="get" action="login.php">
+        <label id="font"><b>First Name
+        </b><br>
+        </label>
+          <input type="text" name="Uname" id="Uname" placeholder="First Name">
+        <br><br>
+        <label id="font"><b>Middle Name
+        </b><br>
+        </label>
+          <input type="Password" name="Pass" id="Pass" placeholder="Middle Name">
+        <br><br>
+    		<label id="font"><b>Family Name
+        </b><br>
+        </label>
+            <input type="text" name="Uname" id="Uname" placeholder="Family Name">
+    		<br><br>
+
+        <div>
+        <label id="font"><b>Gender
+        </b><br></label>
+        <input type="radio" name="drone" value="Female">
+          <label for="Female" id="font2">Female &nbsp&nbsp&nbsp&nbsp&nbsp</label>
+          <input type="radio" name="drone" value="Male">
+          <label for="Male" id="font2">Male</label>
+          <br><br>
+        </div>
+
+        <label id="font"><b>Email
+        </b><br>
+        </label>
+            <input type="email" name="Uname" id="Uname" placeholder="Email">
+        <br><br>
+        <label id="font"><b>Home Address
+        </b><br>
+        </label>
+            <textarea type="email" name="Uname" id="Address" placeholder="Home Address"></textarea>
+        <br><br>
+        <label id="font"><b>Hobbies
+        </b><br>
+        </label>
+        <input type="checkbox"><label id="font2">Computer games </label>
+        <input type="checkbox"><label id="font2">Playing music instruments </label><br>
+        <input type="checkbox"><label id="font2">Cooking &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input type="checkbox"><label id="font2">Drawing &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><br>
+        <br><br>
+        <label id="font"><b>Favorite Color
+        </b><br>
+        </label>
+
+        <form action="/action_page.php">
+        <label id="font2">Choose a color:</label>
+        <select name="cars" >
+          <option id="font2">Red</option>
+          <option id="font2">Blue</option>
+          <option id="font2">Yellow</option>
+          <option id="font2">Green</option>
+          <option id="font2">Brown</option>
+          <option id="font2">Orange</option>
+          <option id="font2">Purple</option>
+          <option id="font2">Pink</option>
+          <option id="font2">Gray</option>
+          <option id="font2">Black</option>
+          <option id="font2">White</option>
+        </select>
+        <br><br>
+      </form>
+
+      <label id="font"><b>Say Something About Yourself
+      </b><br>
+      </label>
+          <textarea type="email" name="Uname" id="Address" placeholder="Say something about yourself"></textarea>
+      <br><br>
+
+        <br><br>
+      <button onclick="popup()" id="btn" type="submit" value="Submit">Submit</button>&nbsp&nbsp
+      <button id="btn" type="reset" value="Reset">Reset</button>
+
+      </center>
+    	</div>
+      <br><br><br><br>
+</form>
+</center>
+</body>
+
+<script>
+function popup() {
+  alert("Entry has been submitted!");
+}
+</script>
+
+</html>
